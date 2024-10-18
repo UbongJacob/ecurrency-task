@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+import FooterSection from "@/components/homeSections/FooterSection";
+import HomeNavBar from "@/components/HomeNavBar";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,9 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${poppins.variable} ${openSans.variable}`}>
-        <main className="mx-auto max-w-[200rem]">{children}</main>
+        <main className="mx-auto max-w-[200rem]">
+          <HomeNavBar />
+          {children}
+          <FooterSection />
+        </main>
       </body>
     </html>
   );

@@ -79,12 +79,12 @@ const ProductReviewsSection = (): JSX.Element => {
         <ul className="hidden-scroll flex w-full gap-7 overflow-x-auto pb-5">
           {productReviews?.map(({ author, img, rating, title }, key) => (
             <li
-              className="shrink-0 rounded-lg bg-white shadow-2xl lg:first:ml-28"
+              className="shrink-0 rounded-lg bg-white shadow-2xl first:ml-7 last:mr-7 lg:first:ml-28"
               key={key}
             >
-              <figure className="flex h-full max-w-[19.125rem] flex-col">
+              <figure className="flex h-full max-w-64 flex-col md:max-w-72 lg:max-w-[19.125rem]">
                 <Image className="w-full" src={img} alt="product" />
-                <figcaption className="flex h-full flex-col px-7 pb-8 pt-4">
+                <figcaption className="flex h-full flex-col px-5 pb-6 pt-4 md:px-6 md:pb-7 lg:px-7 lg:pb-8">
                   <blockquote className="text-sm italic text-appGreen100 sm:text-base">
                     {title}
                   </blockquote>

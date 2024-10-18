@@ -15,9 +15,11 @@ const config: Config = {
       colors: {
         appBlue100: "#12305B",
         appBlue200: "#21384299",
+        appBlue300: "#8FE2FF",
         appRed100: "#FC5959",
         appLightGray100: "#FBF9F2",
         appLightGray200: "#21384218",
+        appGray100: "#ABABAB",
         appGreen100: "#4D533C",
         appGreen200: "#27AE60",
         appYellow100: "#FFD7231A",

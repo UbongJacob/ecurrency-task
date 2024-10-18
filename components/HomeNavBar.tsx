@@ -90,24 +90,16 @@ const HomeNavBar = (): JSX.Element => {
           isMobileVisible ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <header className="border-appLightGray200 flex items-center justify-between border-b py-5">
+        <header className="flex items-center justify-between border-b border-appLightGray200 py-5">
           <AppLogo className="text-2xl" />
 
-          <div className="flex items-center gap-4">
-            <button
-              type="button"
-              className="bg-appBlue200 w-28 cursor-pointer rounded-lg py-3 text-center font-medium text-white transition-all duration-300 hover:scale-105 active:scale-95 sm:w-32 sm:py-3"
-            >
-              Get Started
-            </button>
-            <button
-              onClick={handleNavClose}
-              className="ml-auto text-base md:hidden"
-              type="button"
-            >
-              <CloseLineIcon className="text-3xl sm:text-4xl" />
-            </button>
-          </div>
+          <button
+            onClick={handleNavClose}
+            className="ml-auto text-base md:hidden"
+            type="button"
+          >
+            <CloseLineIcon className="text-3xl sm:text-4xl" />
+          </button>
         </header>
 
         <ul className="hidden-scroll flex h-[85%] flex-col items-start gap-y-6 overflow-y-auto py-6 text-base">
