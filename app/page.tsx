@@ -32,7 +32,7 @@ export default function Home() {
             can get quality sleep.
           </h3>
           <Link
-            className="font-openSans max-w-56 rounded-md bg-appRed100 py-3 text-center text-white transition-all duration-300 hover:scale-105 active:scale-95"
+            className="max-w-56 rounded-md bg-appRed100 py-3 text-center font-openSans text-white transition-all duration-300 hover:scale-105 active:scale-95"
             href={routes.SHOP_PAGE}
           >
             Visit Shop
@@ -40,8 +40,8 @@ export default function Home() {
         </section>
       </div>
       <ul className="-mt-10 ml-auto flex max-w-[88rem] flex-wrap items-center justify-around gap-x-10 gap-y-4 rounded bg-white p-5 shadow-2xl lg:gap-x-4 lg:gap-y-7">
-        {logos?.map((value) => (
-          <li>
+        {logos?.map((value, key) => (
+          <li key={key}>
             <Image className="w-full max-w-32" src={value} alt="logo" />
           </li>
         ))}
