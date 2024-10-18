@@ -8,6 +8,8 @@ import SleepReviewLogo from "@/public/sleep-review-logo.png";
 import InflunciveLogo from "@/public/influncive-logo.png";
 import Image from "next/image";
 import HappyCustomerSection from "@/components/homeSections/HappyCustomerSection";
+import ReviewsSection from "@/components/homeSections/ReviewsSection";
+import ShopNowSection from "@/components/homeSections/ShopNowSection";
 
 const logos = [
   BloombergLogo,
@@ -47,6 +49,8 @@ export default function Home() {
         ))}
       </ul>
       <HappyCustomerSection />
+      <ReviewsSection />
+      <ShopNowSection />
     </main>
   );
 }

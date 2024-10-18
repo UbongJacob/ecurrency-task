@@ -19,7 +19,7 @@ const HappyCustomerSection = (): JSX.Element => {
           fosters candid collaboration.
         </p>
 
-        <span className="flex items-center text-base text-appBlue100 transition-all duration-300 hover:text-appRed100">
+        <span className="flex cursor-pointer items-center text-base text-appBlue100 transition-all duration-300 hover:text-appRed100">
           <RiArrowDropRightFill className="shrink-0 text-2xl" />
           <span className="font-semibold underline underline-offset-2">
             Know More About Us

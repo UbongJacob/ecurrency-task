@@ -1,11 +1,36 @@
 import { SVGProps } from "react";
 
-
-
 export function RiArrowDropRightFill(props: SVGProps<SVGSVGElement>) {
-	return (<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="m14 12l-4 4V8z"></path></svg>);
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path fill="currentColor" d="m14 12l-4 4V8z"></path>
+    </svg>
+  );
 }
 
+export function StarIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      fill="none"
+      viewBox="0 0 12 11"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        d="M6 0l1.347 4.146h4.36L8.18 6.708l1.347 4.146L6 8.292l-3.527 2.562L3.82 6.708.294 4.146h4.359L6 0z"
+      ></path>
+    </svg>
+  );
+}
 
 export function CloseLineIcon(props: SVGProps<SVGSVGElement>) {
   return (
