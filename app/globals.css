@@ -13,3 +13,17 @@ body {
 .hidden-scroll::-webkit-scrollbar {
   width: 0;
 }
+
+.app-collapse {
+  display: grid !important;
+  transition: grid-template-rows 500ms !important;
+  transition-duration: 700ms;
+}
+
+.app-collapse-close {
+  grid-template-rows: 0fr !important;
+}
+
+.app-collapse-open {
+  grid-template-rows: 1fr !important;
+}

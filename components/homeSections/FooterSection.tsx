@@ -46,7 +46,7 @@ const FooterSection = (): JSX.Element => {
 
           {contact?.map((value, key) => (
             <li
-              className="text-appGray100 transition-all duration-300 odd:cursor-pointer odd:font-semibold odd:text-white odd:hover:scale-105 odd:hover:text-appRed100 active:scale-95"
+              className="text-appGray100 odd:hover:text-appBlue300 transition-all duration-300 odd:cursor-pointer odd:font-semibold odd:text-white odd:hover:scale-105 active:scale-95"
               key={key}
             >
               {value}
@@ -90,7 +90,10 @@ const FooterSection = (): JSX.Element => {
 
           <ul className="flex items-center gap-3">
             {socials?.map((value, key) => (
-              <li className="text-2xl sm:text-3xl" key={key}>
+              <li
+                className="text-appBlue300 cursor-pointer text-2xl transition-all duration-300 hover:scale-110 hover:text-white active:scale-90 sm:text-3xl"
+                key={key}
+              >
                 {value}
               </li>
             ))}

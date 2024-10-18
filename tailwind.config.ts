@@ -20,6 +20,7 @@ const config: Config = {
         appLightGray100: "#FBF9F2",
         appLightGray200: "#21384218",
         appGray100: "#ABABAB",
+        appGray200: "#BDBDBD",
         appGreen100: "#4D533C",
         appGreen200: "#27AE60",
         appYellow100: "#FFD7231A",
