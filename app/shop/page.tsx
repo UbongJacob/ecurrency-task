@@ -1,7 +1,6 @@
 import ReviewsSection from "@/components/homeSections/ReviewsSection";
-import Image from "next/image";
 import VapePenImg from "@/public/vape-pen.png";
-import Link from "next/link";
+import Image from "next/image";
 
 const ShopPage = (): JSX.Element => {
   return (
