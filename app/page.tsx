@@ -10,6 +10,7 @@ import Image from "next/image";
 import HappyCustomerSection from "@/components/homeSections/HappyCustomerSection";
 import ReviewsSection from "@/components/homeSections/ReviewsSection";
 import ShopNowSection from "@/components/homeSections/ShopNowSection";
+import ProductReviewsSection from "@/components/homeSections/ProductReviewsSection";
 
 const logos = [
   BloombergLogo,
@@ -51,6 +52,7 @@ export default function Home() {
       <HappyCustomerSection />
       <ReviewsSection />
       <ShopNowSection />
+      <ProductReviewsSection />
     </main>
   );
 }
