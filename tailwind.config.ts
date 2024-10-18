@@ -8,9 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        appBlue100: "#12305B",
+        appRed100: "#FC5959",
+      },
       fontFamily: {
         poppins: "var(--font-poppins)",
+        openSans: "var(--font-open-sans)",
       },
     },
   },

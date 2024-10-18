@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-poppins",
+});
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-open-sans",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} `}>{children}</body>
+      <body className={`${poppins.variable} ${openSans.variable}`}>
+        <main className="mx-auto max-w-[200rem]">{children}</main>
+      </body>
     </html>
   );
 }
