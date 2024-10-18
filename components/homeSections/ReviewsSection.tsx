@@ -31,11 +31,17 @@ const reviewData: ReviewCardProps[] = [
   },
 ];
 
-const ReviewsSection = (): JSX.Element => {
+interface Props {
+  hideLine?: boolean;
+}
+
+const ReviewsSection = ({ hideLine }: Props): JSX.Element => {
   return (
     <>
       <InfiniteMovingCards items={reviewData} direction="right" speed="slow" />
-      <hr className="mx-auto my-14 max-w-7xl border-[1px] border-appLightGray200" />
+      {!hideLine && (
+        <hr className="mx-auto my-14 max-w-7xl border-[1px] border-appLightGray200" />
+      )}
     </>
   );
 };

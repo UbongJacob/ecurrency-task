@@ -23,6 +23,7 @@ const config: Config = {
         appGray200: "#BDBDBD",
         appGreen100: "#4D533C",
         appGreen200: "#27AE60",
+        appGreen300: "#043C50",
         appYellow100: "#FFD7231A",
       },
       fontFamily: {

@@ -24,7 +24,9 @@ const socials = [
 
 const FooterSection = (): JSX.Element => {
   return (
-    <footer className="relative bg-appBlue100 px-5 py-10 2xl:px-0">
+    <footer className="relative bg-appBlue100/95 px-5 py-10 2xl:px-0">
+      <div className="absolute inset-0 !z-[100000] bg-[url('/footer-lines.png')] bg-cover bg-center bg-no-repeat" />
+
       <AppLightLogo className="mx-auto text-4xl" />
 
       <div className="mx-auto grid max-w-[82.813rem] grid-cols-2 gap-x-5 gap-y-10 pt-12 text-white md:grid-cols-4 xl:grid-cols-11">
