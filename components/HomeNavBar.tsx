@@ -55,9 +55,9 @@ const HomeNavBar = (): JSX.Element => {
         }`}
       >
         <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-5 2xl:px-0">
-          <ul className="relative flex w-full items-center justify-center gap-7 py-7 lg:gap-10">
+          <ul className="relative flex w-full items-center justify-center gap-7 py-3 lg:gap-10">
             <Link className="absolute left-0" href={routes.HOME_PAGE}>
-              <AppLogo className="text-2xl" />
+              <AppLogo className="text-xl" />
             </Link>
             {navs?.map(({ route, title }, key) => (
               <li key={key}>

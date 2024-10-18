@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         appBlue100: "#12305B",
+        appBlue200: "#21384299",
         appRed100: "#FC5959",
       },
       fontFamily: {

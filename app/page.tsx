@@ -1,10 +1,25 @@
 import HomeNavBar from "@/components/HomeNavBar";
 import routes from "@/navigation/routes";
 import Link from "next/link";
+import BloombergLogo from "@/public/bloomberg-logo.png";
+import ForbesLogo from "@/public/forbes-logo.png";
+import GoogleLogo from "@/public/google-logo.png";
+import SleepReviewLogo from "@/public/sleep-review-logo.png";
+import InflunciveLogo from "@/public/influncive-logo.png";
+import Image from "next/image";
+import HappyCustomerSection from "@/components/homeSections/HappyCustomerSection";
+
+const logos = [
+  BloombergLogo,
+  ForbesLogo,
+  GoogleLogo,
+  SleepReviewLogo,
+  InflunciveLogo,
+];
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-white">
       <div className="h-[100dvh] bg-[url('/home-hero.png')] bg-cover bg-center bg-no-repeat">
         <HomeNavBar />
         <section className="mx-auto flex h-full max-w-7xl flex-col justify-center px-5 2xl:px-0">
@@ -24,6 +39,14 @@ export default function Home() {
           </Link>
         </section>
       </div>
+      <ul className="-mt-10 ml-auto flex max-w-[88rem] flex-wrap items-center justify-around gap-x-10 gap-y-4 rounded bg-white p-5 shadow-2xl lg:gap-x-4 lg:gap-y-7">
+        {logos?.map((value) => (
+          <li>
+            <Image className="w-full max-w-32" src={value} alt="logo" />
+          </li>
+        ))}
+      </ul>
+      <HappyCustomerSection />
     </main>
   );
 }
