@@ -16,10 +16,10 @@ const contact = [
 ];
 
 const socials = [
-  <FacebookIcon />,
-  <TwitterIcon />,
-  <GooglePlusIcon />,
-  <LinkedInIcon />,
+  <FacebookIcon key={1} />,
+  <TwitterIcon key={2} />,
+  <GooglePlusIcon key={3} />,
+  <LinkedInIcon key={4} />,
 ];
 
 const FooterSection = (): JSX.Element => {

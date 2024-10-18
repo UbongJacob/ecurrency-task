@@ -35,7 +35,7 @@ const ReviewsSection = (): JSX.Element => {
   return (
     <>
       <InfiniteMovingCards items={reviewData} direction="right" speed="slow" />
-      <hr className="border-appLightGray200 mx-auto my-14 max-w-7xl border-[1px]" />
+      <hr className="mx-auto my-14 max-w-7xl border-[1px] border-appLightGray200" />
     </>
   );
 };
